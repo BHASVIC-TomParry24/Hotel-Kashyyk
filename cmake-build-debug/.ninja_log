@@ -1,0 +1,10 @@
+# ninja log v6
+3	217	7526037945721063	CMakeFiles/Hotel_Kashyyk.dir/read.c.obj	23a91eea0a753136
+7	301	7526042085886441	CMakeFiles/Hotel_Kashyyk.dir/main.c.obj	ff7228010b9e380
+303	581	7526042088842951	Hotel_Kashyyk.exe	65f47fb47fd8770c
+4	481	7526042459818008	build.ninja	96604fc4e5f3e99f
+7	215	7526042474533893	CMakeFiles/Hotel_Kashyyk.dir/main.c.obj	ff7228010b9e380
+9	414	7526042993959856	CMakeFiles/Hotel_Kashyyk.dir/read.c.obj	23a91eea0a753136
+415	896	7526042998015782	Hotel_Kashyyk.exe	45c9e74a7b9a910a
+6	193	7526043823950977	CMakeFiles/Hotel_Kashyyk.dir/read.c.obj	23a91eea0a753136
+194	500	7526043825827716	Hotel_Kashyyk.exe	45c9e74a7b9a910a
