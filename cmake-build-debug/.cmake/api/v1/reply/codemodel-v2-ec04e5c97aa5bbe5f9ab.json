@@ -39,11 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Hotel_Kashyyk::@6890427a1f51a3e7e1df",
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-4ffd9b3d07c8a06044ce.json
-					"jsonFile" : "target-Hotel_Kashyyk-Debug-2f6867ba1f0a5072ec4b.json",
-========
-					"jsonFile" : "target-Hotel_Kashyyk-Debug-7861e92eb702c6c51edf.json",
->>>>>>>> f22d16754c2dba02456f16c120ebdb4fee459c88:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-10e158a4c8de96ae2eee.json
+					"jsonFile" : "target-Hotel_Kashyyk-Debug-bee149c5ee98ec487895.json",
 					"name" : "Hotel_Kashyyk",
 					"projectIndex" : 0
 				}
@@ -53,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/richa/GitHub/Hotel-Kashyyk/cmake-build-debug",
-		"source" : "C:/Users/richa/GitHub/Hotel-Kashyyk"
+		"build" : "C:/Users/thoma/Documents/Computer  Science/C-Projects/Hotel-Kashyyk/cmake-build-debug",
+		"source" : "C:/Users/thoma/Documents/Computer  Science/C-Projects/Hotel-Kashyyk"
 	},
 	"version" : 
 	{

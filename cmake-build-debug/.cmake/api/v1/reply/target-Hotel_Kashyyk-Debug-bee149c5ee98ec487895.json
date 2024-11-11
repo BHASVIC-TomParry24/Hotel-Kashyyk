@@ -53,12 +53,9 @@
 			"sourceIndexes" : 
 			[
 				0,
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-Hotel_Kashyyk-Debug-2f6867ba1f0a5072ec4b.json
 				2,
-				3
-========
-				1
->>>>>>>> f22d16754c2dba02456f16c120ebdb4fee459c88:cmake-build-debug/.cmake/api/v1/reply/target-Hotel_Kashyyk-Debug-7861e92eb702c6c51edf.json
+				3,
+				4
 			]
 		}
 	],
@@ -96,17 +93,15 @@
 			"sourceIndexes" : 
 			[
 				0,
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-Hotel_Kashyyk-Debug-2f6867ba1f0a5072ec4b.json
 				2,
-				3
+				3,
+				4
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-========
->>>>>>>> f22d16754c2dba02456f16c120ebdb4fee459c88:cmake-build-debug/.cmake/api/v1/reply/target-Hotel_Kashyyk-Debug-7861e92eb702c6c51edf.json
 				1
 			]
 		}
@@ -121,7 +116,6 @@
 		},
 		{
 			"backtrace" : 1,
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-Hotel_Kashyyk-Debug-2f6867ba1f0a5072ec4b.json
 			"path" : "project.h",
 			"sourceGroupIndex" : 1
 		},
@@ -135,10 +129,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "checkIn.c",
-========
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "read.c",
->>>>>>>> f22d16754c2dba02456f16c120ebdb4fee459c88:cmake-build-debug/.cmake/api/v1/reply/target-Hotel_Kashyyk-Debug-7861e92eb702c6c51edf.json
 			"sourceGroupIndex" : 0
 		}
 	],

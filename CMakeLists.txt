@@ -7,4 +7,5 @@ add_executable(Hotel_Kashyyk
         main.c
         project.h
         writeFile.c
-        checkIn.c)
+        checkIn.c
+        read.c)

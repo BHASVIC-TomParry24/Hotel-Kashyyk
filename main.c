@@ -2,6 +2,6 @@
 #include "project.h"
 
 int main(void) {
-    checkIn();
+    read("roomExampleData.txt", 4);
     return 0;
 }
