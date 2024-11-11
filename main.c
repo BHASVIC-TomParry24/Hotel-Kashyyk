@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "project.h"
 
 int main(void) {
-    printf("Hello, World!\n");
+    checkIn();
     return 0;
 }

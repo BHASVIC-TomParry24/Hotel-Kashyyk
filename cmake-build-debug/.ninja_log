@@ -1,0 +1,20 @@
+# ninja log v6
+4	80	7526202531457817	CMakeFiles/Hotel_Kashyyk.dir/main.c.obj	357e875871852626
+4	79	7526205191810432	CMakeFiles/Hotel_Kashyyk.dir/writeFile.c.obj	3ea8d7ac6c80f4d1
+79	170	7526205192565598	Hotel_Kashyyk.exe	40efe3aa59170f02
+5	104	7526230563781350	CMakeFiles/Hotel_Kashyyk.dir/main.c.obj	357e875871852626
+11	105	7526230563853557	CMakeFiles/Hotel_Kashyyk.dir/checkIn.c.obj	2c571f716e07d66e
+3	69	7526230794067669	CMakeFiles/Hotel_Kashyyk.dir/main.c.obj	357e875871852626
+7	117	7526243906230027	CMakeFiles/Hotel_Kashyyk.dir/main.c.obj	357e875871852626
+14	133	7526243906301626	CMakeFiles/Hotel_Kashyyk.dir/checkIn.c.obj	2c571f716e07d66e
+134	272	7526243907492469	Hotel_Kashyyk.exe	7fac173959f1bccc
+4	74	7526244083992996	CMakeFiles/Hotel_Kashyyk.dir/main.c.obj	357e875871852626
+75	163	7526244084704120	Hotel_Kashyyk.exe	7fac173959f1bccc
+4	88	7526245541138340	CMakeFiles/Hotel_Kashyyk.dir/checkIn.c.obj	2c571f716e07d66e
+89	205	7526245541992487	Hotel_Kashyyk.exe	7fac173959f1bccc
+5	91	7526245911062267	CMakeFiles/Hotel_Kashyyk.dir/checkIn.c.obj	2c571f716e07d66e
+92	191	7526245911931027	Hotel_Kashyyk.exe	7fac173959f1bccc
+5	102	7526245977770239	CMakeFiles/Hotel_Kashyyk.dir/checkIn.c.obj	2c571f716e07d66e
+102	198	7526245978738967	Hotel_Kashyyk.exe	7fac173959f1bccc
+5	117	7526249604555296	CMakeFiles/Hotel_Kashyyk.dir/checkIn.c.obj	2c571f716e07d66e
+118	270	7526249605678761	Hotel_Kashyyk.exe	7fac173959f1bccc
