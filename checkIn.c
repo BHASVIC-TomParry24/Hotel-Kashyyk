@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "project.h"
 #include <stdlib.h>
+#include <string.h>
 
 void checkIn() {
     const int fullBoardRate = 20;
@@ -20,6 +21,7 @@ void checkIn() {
     int age;
     char rooms[6][10] = {"room1.txt", "room2.txt", "room3.txt", "room4.txt", "room5.txt", "room6.txt"};
     char tables[3][10] = {"Endor", "Naboo", "Tatooine"};
+    char* nullString = "NULL";
 
     for (int i = 0; i < 30; i++) {
         lastName[i] = 0;
@@ -63,7 +65,12 @@ void checkIn() {
         bookingId[i + lastNameLength] = randomNumberList[0];
     }
 
-    for (int i = 0; i < sizeof(bookingId); i++) {
-        printf("%c",bookingId[i]);
+    printf("Available Rooms: \n");
+    for(int i = 1; i <= 6; i++) {
+        char roomFileName[10];
+        sprintf(roomFileName, "room%d.txt", i);
+        if (strcmp(read(roomFileName, 10), nullString) == 1) {
+            printf("Room Number %s (£%s)", read(roomFileName, 1), read(roomFileName, 11));
+        }
     }
 }

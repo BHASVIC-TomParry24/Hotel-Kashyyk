@@ -1,10 +1,11 @@
 #include<stdio.h>
+#include<stdlib.h>
 
-void read(char fileName[15], int line) {
+char * read(char fileName[15], int line) {
   FILE *file = fopen(fileName, "r");
   if (file == NULL) {
     printf("Error: Could not open file %s\n", file);
-    return;
+    exit(0);
   }
 
   char buffer[256];
@@ -14,14 +15,15 @@ void read(char fileName[15], int line) {
   while (fgets(buffer, sizeof(buffer), file) != NULL) {
     currentLine++;
     if (currentLine == line) {
-      printf("Line %d: %s", line, buffer);
-      return;
+      char *string = buffer;
+      return(string);
     }
   }
 
 
   printf("Error: Line %d not found in file %s\n", line, file);
   fclose(file);
+  exit(0);
 }
 
 
