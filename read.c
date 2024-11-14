@@ -16,6 +16,7 @@ char * read(char fileName[15], int line) {
     currentLine++;
     if (currentLine == line) {
       char *string = buffer;
+      fclose(file);
       return(string);
     }
   }
