@@ -1,3 +1,6 @@
-TABLE NAME
-CURRENTLY BOOKED 7?(T/F)
-CURRENTLY BOOKED 9?(T/F)
+Available at 7?(T/F) (Ednoor)
+Available at 9?(T/F) (Ednoor)
+Available at 7?(T/F) (Naboo)
+Available at 9?(T/F) (Naboo)
+Available at 7?(T/F) (Tatooine)
+Available at 9?(T/F) (Tatooine)
