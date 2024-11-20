@@ -108,10 +108,12 @@ void checkIn() {
     for(int i = 1; i <= 6; i++) {
         char roomFileName[10];
         sprintf(roomFileName, "room%d.txt", i);
-        char* fileLineContent = read(roomFileName, 10);
+        char fileLineContent[100];
+        read(roomFileName, 10, fileLineContent);
         if (strcmp(fileLineContent, nullString) == 0) {
             roomAvailable[i - 1] = 84;
-            printf("Room Number %d (%s pounds)\n", i, read(roomFileName, 11));
+            char price[100];
+            printf("Room Number %d (%s pounds)\n", i, read(roomFileName, 11, price));
         }
         else {
             roomAvailable[i - 1] = 70;
@@ -162,4 +164,6 @@ void checkIn() {
     writeFile(roomFileName, 8 , lengthOfStay);
     writeFile(roomFileName, 9, newspaper);
     writeFile(roomFileName, 10, bookingId);
+
+    printf("Your booking id is %s\n", bookingId);
 }

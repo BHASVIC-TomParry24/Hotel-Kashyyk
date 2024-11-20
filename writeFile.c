@@ -29,25 +29,17 @@ void writeFile(char fileName[30], int line, char text[30]) {
             fputs(text, temp);
             fputs("\n", temp);
         }
-        else {
+        else if (counter < 12) {
             fputs(buffer, temp);
+        }
+        else {
+            break;
         }
     }
 
     fclose(file);
     fclose(temp);
-    if (remove(fileName) == 0) {
-        printf("Deleted successfully!!\n");
-    }
-    else {
-        printf("Unable to delete the file!!\n");
-    }
-    if (rename("temp.txt", fileName) == 0) {
-        printf("Renamed successfully!!\n");
-    }
-    else {
-        printf("Unable to rename the file!!\n");
-    }
-    printf(" Replacement did successfully..!! \n");
+    remove(fileName);
+    rename("temp.txt", fileName);
     return;
 }
