@@ -65,7 +65,7 @@ int validateTableBooking() {
     scanf("%s", &bookingID);
 
     for (int i = 0; i <= 5; i++) {
-        read(rooms[i], 9, roomData);
+        read(rooms[i], 10, roomData);
         if (strcmp(bookingID, roomData) == 0) {
             invalidBookingID = 0;
             read(rooms[i], 6, board);
