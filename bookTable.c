@@ -5,6 +5,15 @@
 #include "project.h"
 
 
+char* readTableBooking(char fileName[15], int line, char buffer[100]) {
+    read(fileName, line, buffer);
+    if (buffer[strlen(buffer) - 1] == '\n') {
+        buffer[strlen(buffer) - 1] = '\0';
+    }
+
+    return buffer;
+}
+
 int removeOldBookings() {
     int err = 0;
     int toBeRemoved = 0;
@@ -24,7 +33,7 @@ int removeOldBookings() {
     }
 
     char fileDate[100];
-    read("..\\tableData.txt", 1, fileDate);
+    readTableBooking("..\\tableData.txt", 1, fileDate);
 
     if (err == 0 && strcmp(dateString, fileDate) == 0) {
         toBeRemoved = 0;
@@ -65,10 +74,10 @@ int validateTableBooking() {
     scanf("%s", &bookingID);
 
     for (int i = 0; i <= 5; i++) {
-        read(rooms[i], 10, roomData);
+        readTableBooking(rooms[i], 9, roomData);
         if (strcmp(bookingID, roomData) == 0) {
             invalidBookingID = 0;
-            read(rooms[i], 6, board);
+            readTableBooking(rooms[i], 6, board);
             if (strcmp(board, "F") == 0 || strcmp(board, "H") == 0) {
                 err = 0;
             } else {
@@ -88,12 +97,12 @@ int validateTableBooking() {
 int displayAvailableTables() {
     char* tableNames[3] = {"Ednoor  ", "Naboo   ", "Tatooine"};
     char tablesAvailable[3][2][100];
-    read("..\\tableData.txt", 2, tablesAvailable[0][0]);
-    read("..\\tableData.txt", 3, tablesAvailable[0][1]);
-    read("..\\tableData.txt", 4, tablesAvailable[1][0]);
-    read("..\\tableData.txt", 5, tablesAvailable[1][1]);
-    read("..\\tableData.txt", 6, tablesAvailable[2][0]);
-    read("..\\tableData.txt", 7, tablesAvailable[2][1]);
+    readTableBooking("..\\tableData.txt", 2, tablesAvailable[0][0]);
+    readTableBooking("..\\tableData.txt", 3, tablesAvailable[0][1]);
+    readTableBooking("..\\tableData.txt", 4, tablesAvailable[1][0]);
+    readTableBooking("..\\tableData.txt", 5, tablesAvailable[1][1]);
+    readTableBooking("..\\tableData.txt", 6, tablesAvailable[2][0]);
+    readTableBooking("..\\tableData.txt", 7, tablesAvailable[2][1]);
 
     int noTablesAvailable = 1;
 
@@ -144,7 +153,7 @@ int chooseTableBooking() {
         lineNumber = lineNumber + 1;
     }
 
-    read("..\\tableData.txt", lineNumber, roomData);
+    readTableBooking("..\\tableData.txt", lineNumber, roomData);
     if (strcmp(roomData, "T") == 0) {
         err = 0;
         writeFile("..\\tableData.txt", lineNumber, "F");
