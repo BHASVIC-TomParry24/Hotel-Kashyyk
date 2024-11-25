@@ -17,10 +17,6 @@ char * read(char fileName[15], int line, char buffer[100]) {
     currentLine++;
     if (currentLine == line) {
       fclose(file);
-      char *ptr = strchr(buffer, '\n');
-      if (ptr) {
-        *ptr = '\0';
-      }
       return buffer;
     }
   }
