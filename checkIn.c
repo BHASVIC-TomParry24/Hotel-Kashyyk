@@ -51,7 +51,7 @@ void checkIn() {
             printf("Please enter a number\n");
         }
         if (numberOfAdults[2] != '\0' && isdigit(numberOfAdults[2]) != 0) {
-            printf("Please enter a number less than 99\n");
+            printf("Please enter a number less than 100\n");
         }
     } while(isdigit(numberOfAdults[0]) == 0 || (numberOfAdults[1] != '\0' && isdigit(numberOfAdults[1]) == 0) || (numberOfAdults[2] != '\0' && isdigit(numberOfAdults[2]) != 0) || isdigit(numberOfAdults[2]) == 0 && numberOfAdults[2] != '\0');
     do {
@@ -62,7 +62,7 @@ void checkIn() {
             printf("Please enter a number\n");
         }
         if (numberOfChildren[2] != '\0' && isdigit(numberOfChildren[2]) != 0) {
-            printf("Please enter a number less than 99\n");
+            printf("Please enter a number less than 100\n");
         }
     } while(isdigit(numberOfChildren[0]) == 0 || (numberOfChildren[1] != '\0' && isdigit(numberOfChildren[1]) == 0) || (numberOfChildren[2] != '\0' && isdigit(numberOfChildren[2]) != 0) || isdigit(numberOfChildren[2]) == 0 && numberOfChildren[2] != '\0');
     do {
@@ -73,11 +73,11 @@ void checkIn() {
             printf("Please enter a number\n");
         }
         if (lengthOfStay[2] != '\0' && isdigit(lengthOfStay[2]) != 0) {
-            printf("Please enter a number less than 99\n");
+            printf("Please enter a number less than 100\n");
         }
     } while(isdigit(lengthOfStay[0]) == 0 || (lengthOfStay[1] != '\0' && isdigit(lengthOfStay[1]) == 0) || (lengthOfStay[2] != '\0' && isdigit(lengthOfStay[2]) != 0) || isdigit(lengthOfStay[2]) == 0 && lengthOfStay[2] != '\0');
     do {
-        printf("Enter the board you want: Full(F) - %d, Half(H) - %d or Bed and Breakfast(B) - %d", fullBoardRate, halfBoardRate, BandBRate);
+        printf("Enter the board you want: Full(F) - %d, Half(H) - %d or Bed and Breakfast(B) - %d: ", fullBoardRate, halfBoardRate, BandBRate);
         scanf("%s",&boardType);
         fflush(stdin);
         if ((strcmp(boardType, "F") != 0) && (strcmp(boardType, "H") != 0) && (strcmp(boardType, "B") != 0) || boardType[1] != '\0') {
@@ -100,7 +100,7 @@ void checkIn() {
             printf("Please enter a number\n");
         }
         if (age[2] != '\0' && isdigit(age[2]) != 0) {
-            printf("Please enter a number less than 99\n");
+            printf("Please enter a number less than 100\n");
         }
     } while(isdigit(age[0]) == 0 || (age[1] != '\0' && isdigit(age[1]) == 0) || (age[2] != '\0' && isdigit(age[2]) != 0) || isdigit(age[2]) == 0 && age[2] != '\0');
 
