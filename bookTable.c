@@ -64,7 +64,7 @@ int removeOldBookings() {
 int validateTableBooking() {
     int err = 1;
     int invalidBookingID = 1;
-    char rooms[6][15] = {"..\\room1.txt", "..\\room2.txt", "..\\room3.txt", "..\\room4.txt", "..\\room5.txt", "..\\room6.txt"};
+    char rooms[6][15] = {"room1.txt", "room2.txt", "room3.txt", "room4.txt", "room5.txt", "room6.txt"};
     char bookingID[100] = "Jim12345678900";
     char* board[100];
     char roomData[100];
@@ -74,10 +74,10 @@ int validateTableBooking() {
     scanf("%s", &bookingID);
 
     for (int i = 0; i <= 5; i++) {
-        readTableBooking(rooms[i], 9, roomData);
+        readTableBooking(rooms[i], 10, roomData);
         if (strcmp(bookingID, roomData) == 0) {
             invalidBookingID = 0;
-            readTableBooking(rooms[i], 6, board);
+            readTableBooking(rooms[i], 7, board);
             if (strcmp(board, "F") == 0 || strcmp(board, "H") == 0) {
                 err = 0;
             } else {
